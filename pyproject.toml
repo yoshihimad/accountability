@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yoshihimad-accountability"
+version = "0.1.0"
+description = "沿决策链标出每步的输入来源与责任方，标出断点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "yoshihimad" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://yoshihimad.github.io"
+Repository = "https://github.com/yoshihimad/accountability"
+Issues = "https://github.com/yoshihimad/accountability/issues"
+
+[project.scripts]
+accountability = "accountability:main"
+
+[tool.setuptools]
+py-modules = ["accountability"]
